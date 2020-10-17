@@ -1,10 +1,11 @@
 .App {
-  width: 100%;
   background-color: black;
   min-height: 100vh;
  margin: 0px;
- display: flex;
- flex-direction: column;
+ text-align: center;
+
+ /* display: flex;
+ flex-direction: column; */
 }
 .main_header{
   width: 100%;
@@ -12,5 +13,5 @@
   height:  fit-content;
   font-size: x-large;
   color: #ffffff;
-  padding: 2%;
+  margin: 2%;
 }

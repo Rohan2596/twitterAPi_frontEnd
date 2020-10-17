@@ -1,12 +1,9 @@
 
 .searchComponent{
     width: 100%;
-    height:5vh;
+    height:fit-content;
     display: flex;
-    align-self: center;
-    flex-direction: column;
-    justify-content: space-around;
-
+    justify-content: center;
 
 }
 .searchInput {
@@ -16,12 +13,11 @@
     float:left;
     padding: 0;
     color: white;
-    font-size: 20px;
+    font-size: x-small;
     transition: 0.4s;
     line-height: 40px;
-    width: 50%;
+    width: 80%;
     border-radius: 10px;
-    margin-left: 2%;
     padding: 2px;
     padding-left: 10px;
     
@@ -30,4 +26,15 @@
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #ffffff;
     opacity: 1; /* Firefox */
+    font-size: x-small;
   }
+  .infoInput{
+      color: white;
+      font-size: xx-large;
+      display: flex;
+      justify-content: center;
+  }
+  .infoInput:hover{
+    background-color: yellow;
+      
+}
