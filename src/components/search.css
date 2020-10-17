@@ -1,0 +1,33 @@
+
+.searchComponent{
+    width: 100%;
+    height:5vh;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+.searchInput {
+    border:2px solid whitesmoke;
+    background: none;
+    outline:whitesmoke;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 2%;
+    padding: 2px;
+    padding-left: 10px;
+    
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+  }

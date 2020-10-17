@@ -5,7 +5,7 @@ import SearchComponent from './components/search';
 function App() {
   return (
     <div className="App">
-     <span className="main_header">Twitter Search </span>
+     <span className="main_header">Twitter Search  </span>
      <SearchComponent/>
     </div>
   );

@@ -1,13 +1,12 @@
 import React,{Component } from "react";
-class SearchComponent extends React.Component{
+import './search.css'
+class SearchComponent extends Component{
     render(){
         return(
-            <>
+            <div className="searchComponent">
+                <input class="searchInput" type="text" name="" placeholder="Search Tweets by @username and #tags or both."/>
 
-            <span>
-                Search Bar Component
-            </span>
-            </>
+            </div>
         )
     }
 }
