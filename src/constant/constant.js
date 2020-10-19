@@ -1,6 +1,6 @@
 module.exports={
-    apiUrl:"",
-    getByUsername:"",
-    getByTag:"",
-    getByBoth:""
+    apiUrl:"http://localhost:8080/tweets",
+    getByUsername:"/username",
+    getByTag:"/tag",
+    getByBoth:"/both"
 }

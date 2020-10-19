@@ -7,11 +7,7 @@ export default class TweetService{
     return axios({
 
         method:"GET",
-        url:'${apiUrl}${getByUsername}',
-
-        headers:{
-            token:""
-        }
+        url:`${apiUrl}${getByUsername}`
     })
     }
 }
