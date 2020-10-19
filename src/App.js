@@ -8,6 +8,7 @@ function App() {
     <div className="App">
      <span className="main_header">Twitter Search  </span>
      <SearchComponent/>
+     <span className="tweetHeader">Tweets</span>
      <TweetComponent/>
     </div>
   );

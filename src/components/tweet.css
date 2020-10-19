@@ -1,0 +1,38 @@
+.tweetsMain{
+    width: 90%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+    border-radius: 2px;
+    height: fit-content;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1%;
+    margin-top: 1%;
+    
+}
+.avatar{
+    width: 15%;
+    height: fit-content;
+    border-right: 1px solid white;
+    color: white;
+}
+.tweet{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.name{
+    color: white;
+}
+.username{
+    color: white;
+}
+.text{
+    color: white;
+}
+.time{
+    color: white;
+}
