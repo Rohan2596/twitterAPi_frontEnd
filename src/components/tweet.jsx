@@ -1,7 +1,12 @@
 import React,{Component } from "react";
-import './tweet.css'
+import './tweet.css';
+import TweetService from '../services/TweetService';
 
 class TweetComponent extends Component{
+
+    componentDidMount(){
+    new TweetService().getAllTweets();
+    }
     render(){
         return(
             <div>

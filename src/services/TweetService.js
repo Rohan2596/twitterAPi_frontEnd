@@ -3,7 +3,7 @@ import { apiUrl,getByUsername } from "../constant/constant";
 
 export default class TweetService{
     
-    getAllTweets=()=>{
+    getAllTweets=(args)=>{
     return axios({
 
         method:"GET",
