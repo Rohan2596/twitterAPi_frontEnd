@@ -11,7 +11,8 @@ class TweetComponent extends Component{
          }
          console.log("THis:-  " + inputDto.inputList[0]);
          
-        new TweetService().getAllTweetsByUsername(inputDto);
+        new TweetService().getAllTweetsByBoth(inputDto);
+        
  
     }   
      

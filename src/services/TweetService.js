@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { apiUrl,getByUsername } from '../constant/constant';
+import { apiUrl,getByUsername, getByBoth,getByTag } from '../constant/constant';
 
 export default class TweetService{
     
@@ -12,4 +12,25 @@ export default class TweetService{
             
         });
     }
+
+    getAllTweetsByTag = (inputDto) => {
+        return axios({
+            method: "POST",
+            url: `${apiUrl}${getByTag}`,
+            data: inputDto
+            
+        });
+    }
+
+    getAllTweetsByBoth = (inputDto) => {
+        return axios({
+            method: "POST",
+            url: `${apiUrl}${getByBoth}`,
+            data: inputDto
+            
+        });
+    }
+    
+    
+
 }
