@@ -7,9 +7,9 @@ class TweetComponent extends Component{
 
     getAllTweets(){
         let inputDto={
-            search:["sada"]
+            inputList:["#elonmusk"]
          }
-         console.log("THis:-  " + inputDto.search[0]);
+         console.log("THis:-  " + inputDto.inputList[0]);
          
         new TweetService().getAllTweetsByUsername(inputDto);
  
