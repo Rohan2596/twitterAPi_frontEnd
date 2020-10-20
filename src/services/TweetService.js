@@ -1,13 +1,15 @@
-import { axios } from 'axios';
-import { apiUrl,getByUsername } from "../constant/constant";
+import axios from 'axios';
+import { apiUrl,getByUsername } from '../constant/constant';
 
 export default class TweetService{
     
-    getAllTweets=(args)=>{
-    return axios({
-
-        method:"GET",
-        url:`${apiUrl}${getByUsername}`
-    })
+   
+    getAllTweetsByUsername = (inputDto) => {
+        return axios({
+            method: "POST",
+            url: `${apiUrl}${getByUsername}`,
+            data: inputDto
+            
+        });
     }
 }

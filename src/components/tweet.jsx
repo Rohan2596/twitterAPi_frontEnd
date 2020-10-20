@@ -1,12 +1,23 @@
 import React,{Component } from "react";
 import './tweet.css';
-import TweetService from '../services/TweetService';
+import TweetService from '../services/TweetService'
 
 class TweetComponent extends Component{
 
+
+    getAllTweets(){
+        let inputDto={
+            search:["sada"]
+         }
+         console.log("THis:-  " + inputDto.search[0]);
+         
+        new TweetService().getAllTweetsByUsername(inputDto);
+ 
+    }   
+     
     componentDidMount(){
-    new TweetService().getAllTweets();
-    }
+        this.getAllTweets()      
+       }
     render(){
         return(
             <div>
