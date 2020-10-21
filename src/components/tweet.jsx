@@ -5,6 +5,14 @@ import TweetService from '../services/TweetService'
 class TweetComponent extends Component{
 
 
+    constructor(props){
+        super(props)
+        this.state={
+            tweets:[]
+        }
+    }
+
+
     getAllTweets(){
         let inputDto={
             inputList:["#elonmusk"]
@@ -13,7 +21,7 @@ class TweetComponent extends Component{
          
         new TweetService().getAllTweetsByBoth(inputDto)
         .then(response => {
-            console.log("output....."+ JSON.stringify(response.data.data));
+            this.setState({tweets:response.data.data});
         }, (err) => {
             console.log("Errorr......"+ JSON.stringify(err.data));
             
@@ -22,6 +30,7 @@ class TweetComponent extends Component{
  
     }  
     displayTweets(){
+        
         return(
          <div className="tweetsMain">
          <div className="avatar">
@@ -42,15 +51,13 @@ class TweetComponent extends Component{
        }
  
        
-
-
     render(){
         
         return(
             <div>
-        <this.displayTweets/>
-        <this.displayTweets/>
-        <this.displayTweets/>
+                 <this.displayTweets/>
+                 <this.displayTweets/>
+                 <this.displayTweets/>
             </div>
             
         )
