@@ -6,7 +6,7 @@ class SearchComponent extends Component{
     render(){
         return(
             <div className="searchComponent">
-                <input className="searchInput" type="text" name="" placeholder="Search Tweets by @username and #tags or both."/>
+                <input className="searchInput" type="text" name="" placeholder="Search Tweets by @username and #tag"/>
             </div>
         )
     }

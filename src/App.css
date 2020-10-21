@@ -1,25 +1,28 @@
 .App {
   background-color: black;
-  height:100vh;
- margin: 0px;
- text-align: center;
- width: 100%;
+  margin: 0 auto;
+  display: block;
 
 }
 .main_header{
   width: 100%;
-  text-align: center;
-  height:  20px;
-  font-size: x-large;
+  height:  fit-content;
+  font-size: medium;
   color: #ffffff;
-  margin: 2%;
-
+  display: flex;
+  justify-content: center;
+padding-top: 1%;
+padding-bottom: 1%;
 }
 .tweetHeader{
-  font-size: larger;
-  color: white;
+  width: 100%;
+  height:  fit-content;
+  font-size: medium;
+  color: #ffffff;
   display: flex;
-  justify-content :flex-start ;
-  flex-direction: row;
+  justify-content: flex-start;
+padding-top: 1%;
+padding-bottom: 1%;
+padding-left: 2%;
 
 }
