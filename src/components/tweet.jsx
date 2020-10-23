@@ -29,22 +29,7 @@ class TweetComponent extends Component{
         
  
     }  
-    displayTweets(){
-        
-        return(
-         <div className="tweetsMain">
-         <div className="avatar">
-             
-         </div>
-             <div className="tweet">
-                 <span className="name">Rohan Kadam</span>
-                 <span className="username">@RohanKadam2596</span>
-                 <span className="text">Checkout my work and give me feedback.</span>
-                 <div className="time">Mon 10.00 am 25/10/2020</div>
-         </div>
-         </div>
-        );
-    } 
+     
      
     componentDidMount(){
         this.getAllTweets()      
@@ -52,12 +37,24 @@ class TweetComponent extends Component{
  
        
     render(){
-        
+     var   displayTweets=this.state.tweets.map((item,i)=>{
+            return(
+                <div className="tweetsMain" key={i}>
+                <div className="avatar">
+                    <img src={item.profile_image_url_https} alt="" srcset=""/>
+                </div>
+                    <div className="tweet">
+            <span className="name">{item.profile_name}</span>
+            <span className="username">{item.profile_screen_name}</span>
+            <span className="text">{item.text}</span>
+            <div className="time">{item.created_time_stamp}</div>
+                </div>
+                </div>
+            )
+        })
         return(
             <div>
-                 <this.displayTweets/>
-                 <this.displayTweets/>
-                 <this.displayTweets/>
+                 {displayTweets}
             </div>
             
         )
