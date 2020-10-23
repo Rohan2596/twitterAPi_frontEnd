@@ -16,7 +16,10 @@
     width: fit-content;
     padding: 1%;
     height:fit-content;
-  
+     
+}
+.avatar_image{
+    border-radius: 20%;
 }
 .tweet{
     width: 80%;
@@ -26,12 +29,13 @@
     padding-left: 0.75%;
 }
 .name{
-    font-size: x-small;
+    font-size: smaller;
     color: white;
+    font-weight: bold;
 }
 .username{
     font-size: xx-small;
-    color: white;
+    color: #1da1f2;
 }
 .text{
     font-size: xx-small;
@@ -40,4 +44,6 @@
 .time{
     font-size: xx-small;
     color: white;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }

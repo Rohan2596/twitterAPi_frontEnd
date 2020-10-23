@@ -41,7 +41,7 @@ class TweetComponent extends Component{
             return(
                 <div className="tweetsMain" key={i}>
                 <div className="avatar">
-                    <img src={item.profile_image_url_https} alt="" srcset=""/>
+                    <img src={item.profile_image_url_https} alt="" srcset="" className="avatar_image"/>
                 </div>
                     <div className="tweet">
             <span className="name">{item.profile_name}</span>
