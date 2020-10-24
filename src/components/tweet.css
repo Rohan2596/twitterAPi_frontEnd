@@ -13,9 +13,10 @@
     
 }
 .avatar{
-    width: fit-content;
+    width: 15%;
     padding: 1%;
     height:fit-content;
+   
      
 }
 .avatar_image{
@@ -34,12 +35,13 @@
     font-weight: bold;
 }
 .username{
-    font-size: xx-small;
+    font-size: x-small;
     color: #1da1f2;
 }
 .text{
     font-size: xx-small;
     color: white;
+    margin-top: 0.75%;
 }
 .time{
     font-size: xx-small;
