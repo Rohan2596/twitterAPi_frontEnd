@@ -55,6 +55,8 @@
     max-width: 100%;
     
 }
+/* media Query  for tablet scrren.*/
+
 @media only screen and (min-width: 767px) {
  
 .avatar{
@@ -102,6 +104,8 @@
     
 }  
   }
+  /* media Query  for laptop scrren.*/
+
   @media only screen and (min-width: 1024px) {
     .tweetsMain{
         width: 70%;
