@@ -26,3 +26,17 @@ padding-bottom: 1%;
 padding-left: 2%;
 
 }
+@media only screen and (min-width: 1024px) {
+  .tweetHeader{
+    width: 90%;
+    height:  fit-content;
+    font-size: medium;
+    color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  
+  }
+}

@@ -103,7 +103,20 @@
 }  
   }
   @media only screen and (min-width: 1024px) {
- 
+    .tweetsMain{
+        width: 70%;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: row;
+        background-color: #333333;
+        border-radius: 2px;
+        height: fit-content;
+        margin-left: 12.5%;
+        
+        margin-top: 1%;
+        
+        
+    }
     
     .avatar{
         width: 10%;
